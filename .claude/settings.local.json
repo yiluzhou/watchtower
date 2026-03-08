@@ -1,0 +1,38 @@
+{
+  "permissions": {
+    "allow": [
+      "WebSearch",
+      "Bash(conda activate watchtower)",
+      "Bash(pip --version)",
+      "Bash(where conda)",
+      "Read(//c/Users/yiluz/miniconda3/condabin/**)",
+      "Read(//c/Users/yiluz/anaconda3/condabin/**)",
+      "Read(//c/ProgramData/miniconda3/condabin/**)",
+      "Read(//c/Users/yiluz/**)",
+      "Bash(cmd.exe /c \"where conda\")",
+      "Bash(cmd.exe /c \"conda info --envs\")",
+      "Bash(powershell.exe -Command \"conda info --envs\")",
+      "Bash(/c/Users/yiluz/.conda/envs/watchtower/python.exe --version)",
+      "Bash(/c/Users/yiluz/.conda/envs/watchtower/python.exe -m pip install -r e:/Dropbox/study/github/watchtower/backend/requirements.txt)",
+      "Bash(/c/Users/yiluz/.conda/envs/watchtower/python.exe -c \"from backend.main import app; print\\(''Backend imports OK''\\)\")",
+      "Bash(node --version)",
+      "Bash(npm --version)",
+      "Bash(npm create vite@latest frontend -- --template react-ts)",
+      "Bash(npm install)",
+      "Bash(npm install -D tailwindcss @tailwindcss/vite @tanstack/react-query lucide-react clsx tailwind-merge)",
+      "Bash(npx tsc --noEmit)",
+      "Bash(npx vite build)",
+      "Bash(curl -s http://localhost:8000/api/health)",
+      "Bash(/c/Users/yiluz/.conda/envs/watchtower/python.exe -c \":*)",
+      "Bash(powershell.exe -Command \"Get-NetTCPConnection -LocalPort 8000 -State Listen | Select-Object OwningProcess\")",
+      "Bash(curl -s http://localhost:8000/api/news/global)",
+      "Bash(/c/Users/yiluz/.conda/envs/watchtower/python.exe -m json.tool)",
+      "Bash(powershell.exe -NoProfile -Command \"Get-NetTCPConnection -LocalPort 8000 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_OwningProcess -Force }\")",
+      "Bash(powershell.exe -NoProfile -Command \"Get-NetTCPConnection -LocalPort 8000 -State Listen -ErrorAction SilentlyContinue | ForEach-Object { Stop-Process -Id $_OwningProcess -Force }; echo ''Cleared''\")",
+      "Bash(cmd.exe /c \"for /f \"\"tokens=5\"\" %a in \\(''netstat -ano ^| findstr :8000 ^| findstr LISTENING''\\) do taskkill /F /PID %a\")",
+      "Bash(cmd.exe /c \"netstat -ano | findstr :8000 | findstr LISTENING\")",
+      "Bash(cmd.exe /c \"netstat -ano | findstr 8000\")",
+      "Bash(cmd.exe /c \"netsh interface ipv4 show excludedportrange protocol=tcp\")"
+    ]
+  }
+}
